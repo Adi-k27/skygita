@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+       <title>Skygita. | CPA and Professional Services Firm</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <? include('scripts/metatags.php'); ?>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="application/javascript" src="scripts/main.js"></script>
+    </head>
+    <body>
+        <header class="fixed-header">
+            <div id="fixedMainHeader">
+                <div class="logo">
+                    <img style="width: 100%" src="assets/logo.png" alt="logo">
+                </div>
+                <nav id="main-navigation">
+                    <ul>
+                        <li><a id="homeMenu" onclick="navigateTabs(home)">HOME</a></li>
+                        <li><a id="aboutMenu" onclick="navigateTabs(about)">About US</a></li>
+                        <li><a id="servicesMenu" onclick="navigateTabs(services)">SERVICES</a></li>
+                        <li><a id="clientsMenu" onclick="navigateTabs(clients)">CLIENTS</a></li>
+                        <li><a id="careersMenu" onclick="navigateTabs(careers)">CAREER</a></li>
+                        <li><a id="contactMenu" onclick="navigateTabs(contact)">CONTACT US</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <a onclick="slideMenu()" class="main_menu_icon"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </header>
+        <div id="slideMainMenu">
+            <nav id="slide-main-navigation">
+                <ul>
+                    <li><a onclick="navigateTabs(home);slideMenu();">Home</a></li>
+                    <li><a onclick="navigateTabs(about);slideMenu();">About Us</a></li>
+                    <li><a onclick="navigateTabs(services);slideMenu();">Services</a></li>
+                    <li><a onclick="navigateTabs(clients);slideMenu();">Clients</a></li>
+                    <li><a onclick="navigateTabs(careers);slideMenu();">Careers</a></li>
+                    <li><a onclick="navigateTabs(contact);slideMenu();">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="mainHeader" >
+            <div class="imageSection">
+                <div class="image" style="margin-top: 0px;">
+                    <img style="width: 100%" src="assets/network-3849206_1920.jpg" alt="logo">
+                </div>
+            </div>
+            <div id="title">
+                <h1>Skygita. </h1><br>                    
+                <h2 id="main">CPA AND PROFESSIONAL SERVICES FIRM</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div id="home">
+                <div class="conent">
+                    <h3 class="impText">Our commitment to quality of service will never be compromised.</h3>
+                    <p>
+                        Ask Inc. ("Aski") is a certified public accountant and professional services firm that provides audit and assurance, 
+                        financial management, program and project management and information technology management services to government agencies 
+                        and organizations focused on the execution of their key initiatives. Founded in 1997, our firm has served as a trusted 
+                        advisor to clients focused on realizing unprecedented efficiency, accountability and responsiveness to their stakeholders. 
+                        Aski continues to build on our firms' successes thanks to our clear vision, rigorously maintained values and, above all, 
+                        our people.
+                    </p>
+                </div>
+                <div class="side-navigation-col">
+                    <h4>OUR SERVICES</h4>
+                    <nav class="side-navigation">
+                        <ul>
+                            <li><i class="fa fa-chevron-circle-right"></i><a onclick="servicesNav('PMHead')">Program & Project Management</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a onclick="servicesNav('FMHead')">Financial Management</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a onclick="servicesNav('AAHead')">Audit & Assurance</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a onclick="servicesNav('ITMHead')">IT Management</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a onclick="servicesNav('ITAXHead')">International Services</a></li>
+                        </ul>
+                    </nav>
+                    <h4>NEWS ROOM</h4>
+                    <nav class="side-navigation">
+                        <ul>
+                            <li><i class="fa fa-chevron-circle-right"></i><a onclick="navigateTabs(newsroom)">Aski Awarded $5 Million BPA by US Department of 
+                                    Transportation Federal Transit Administration</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="conent">
+                    <div class="imageSection">
+                        <div class="image" >
+                            <img class="imageWidth" src="assets/consulting-meeting-sample.jpg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="about">
+                <div class="conent">
+                    <h3>ABOUT ASKI</h3>
+                    <p>
+                        Skygita. ("Aski") is an Alexandria, Virginia-based small, women-owned Small Business Administration certified 8(a) CPA 
+                        and professional services firm.
+                    </p>
+                    <p>
+                        Established in 1997, Aski provides audit and assurance, financial management, program and project management and 
+                        information technology management services to assist government agencies in the execution of their key initiatives.
+                    </p> 
+                    <p>
+                        Our company's senior management team has an average of 21 years experience auditing, managing and implementing commercial, 
+                        Federal and State and Local Governments' financial management systems as well as supporting their information technology 
+                        initiatives.
+                    </p> 
+                    <p>
+                        In addition, Aski has trusted partnerships with Service-Disabled Veteran-Owned, Hub Zone and Native American firms.
+                    </p>
+                    <div class="imageSection">
+                        <div class="image" >
+                            <img class="imageWidth" src="assets/growth-1245931_640.jpg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="side-navigation-col">
+                    <h4>OUR SERVICES</h4>
+                    <nav class="side-navigation">
+                        <ul>
+                            <li><i class="fa fa-chevron-circle-right"></i><a onclick="navigateTabs(services)">Program & Project Management</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a onclick="navigateTabs(services)">Financial Management</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a onclick="navigateTabs(services)">Audit & Assurance</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a onclick="navigateTabs(services)">IT Management</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a onclick="navigateTabs(services)">International Services</a></li>
+                        </ul>
+                    </nav>
+                    <div class="imageSection">
+                        <div class="image" >
+                            <img class="imageWidth" src="assets/consulting_image_4_shaking_hands.jpg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="services">
+                <div class="conent">
+                    <h2>Services</h2>
+                    <p>
+                        Aski provides the following range of professional services in support of clients that are focused on achieving their 
+                        mission goals.
+                    </p>
+                    <h3 id="CSD" class="impText">Commercial Services Division </h3>
+                    <div class="sliderContent">
+                        <div>
+                            <span class="showContent"><i class="fa fa-chevron-down serviceIcon" aria-hidden="true"></i></span>
+                            <span class="hideContent"><i class="fa fa-chevron-up serviceIcon" aria-hidden="true"></i></span>
+                            <p id="AAHead" class="serviceName" onclick="display(AA)">Audit & Assurance</p>
+                        </div>
+                        <div id="AA">
+                            <p>
+                                Aski provides best-suited accounting professionals based on your business requirements for non-profit,
+                                small and medium businesses. We provide the highest assurance and in-depth analysis while performing 
+                                audits. The audit and assurance services are:
+                            </p>
+                            <ol>
+                                <li>Internal Audits.</li>
+                                <li>IT Audits.</li>
+                                <li>Accounting Audits.</li>
+                                <li>Due Diligence Review.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="sliderContent">
+                        <div>
+                            <span class="showContent"><i class="fa fa-chevron-down serviceIcon" aria-hidden="true"></i></span>
+                            <span class="hideContent"><i class="fa fa-chevron-up serviceIcon" aria-hidden="true"></i></span>
+                            <p id="ASHead" class="serviceName" onclick="display(AS)">Advisory Services</p>
+                        </div>
+                        <div id="AS">
+                            <p>
+                                In a business, an advisor who has demonstrated experience in developing solutions to the issues and 
+                                challenges facing companies is beneficial. We provide an advisor who understands business strategy, 
+                                technology solutions, risk management and strategic data analysis. We work together with you on 
+                                critical aspects of your business.
+                            </p>
+                            <ol>
+                                <li>Business strategy.</li>
+                                <li>Market Analysis.</li>
+                                <li>Technology solutions.</li>
+                                <li>Cost Reductions.</li>
+                                <li>Risk management.</li>
+                                <li>Litigation Support.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="sliderContent">
+                        <div>
+                            <span class="showContent"><i class="fa fa-chevron-down serviceIcon" aria-hidden="true"></i></span>
+                            <span class="hideContent"><i class="fa fa-chevron-up serviceIcon" aria-hidden="true"></i></span>
+                            <p id="ICCHead" class="serviceName" onclick="display(ICC)">ISO and CMMI Certification</p>
+                        </div>
+                        <div id="ICC">
+                            <p>
+                                Capability Maturity Model Integration (CMMI) and International Organization for Standards (ISO) 
+                                certified organization requires time and resources. It makes the organization better by improving 
+                                quality, saving time and money. Certification provides more business value to customers, it will be 
+                                more reliable.
+                            </p>
+                        </div>
+                    </div>
+                    <h3 id="TSHead" class="impText">Tax Services</h3>
+                    <div class="sliderContent">
+                        <div>
+                            <span class="showContent"><i class="fa fa-chevron-down serviceIcon" aria-hidden="true"></i></span>
+                            <span class="hideContent"><i class="fa fa-chevron-up serviceIcon" aria-hidden="true"></i></span>
+                            <p id="ITAXHead" class="serviceName" onclick="display(ITAX)">International Taxes</p>
+                        </div>
+                        <div id="ITAX">
+                            <p>
+                                ASK International has numerous employees who are former IRS employees including one, Mike Stack who spent 23 years with the
+                                International Division. He spent several years working at embassies and consulates all over the world and is very familiar 
+                                with International tax issues. This year with ASK International, he traveled for 3 weeks in South America to assist U.S. 
+                                expatriates and foreign corporations with there tax returns and audit issues. Foreign issues that ASK International is 
+                                familiar with include but are not limited to:
+                            </p>
+                            <ol>
+                                <li>Foreign Bank Account Reports (FBARs)</li>
+                                <li>Ownership and Sale of Foreign Real Estate</li>
+                                <li>Foreign Account Tax Compliance Act Requirements (FATCA) These reports are in addition to above FBAR requirements</li>
+                                <li>Non-Resident Alien 1040NR returns, and Resident Alien Issues. completely</li>
+                                <li>Exclusion of Foreign Earned Income</li>
+                                <li>Foreign Tax Credit and Foreign Tax Deduction</li>
+                                <li>International Social Security Tax Totalization Agreements</li>
+                                <li>Foreign Tax Treaties</li>
+                                <li>Foreign Corporation Returns</li>
+                                <li>Payments to Foreign Partner of a U.S. Partnership</li>
+                                <li>Foreign Investors in Real Property Tax Act (FIRPTA)</li>
+                                <li>Tax Withholding requirements related to payments to foreign entities</li>
+                                <li>Issues related to Funds Transfers (especially wires) Internationally</li>
+                                <li>U.S. Territory Tax Issues Puerto Rico, Guam, American Samoa, U.S. Virgin Islands and the Northern Mariana Islands</li>
+                                <li>Expatriate Issues Such as Foreign Retirement, Pensionado Visas</li>
+                                <li>Foreign Government Tax Structures and Enforcement</li>
+                                <li>Foreign Government Tax information Sharing with the U.S. Government</li>
+                                <li>IRS Overseas Enforcement and Audit Issues</li>
+                                <li>General Tax Strategy Considerations When Moving or Working Overseas</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="sliderContent">
+                        <div>
+                            <span class="showContent"><i class="fa fa-chevron-down serviceIcon" aria-hidden="true"></i></span>
+                            <span class="hideContent"><i class="fa fa-chevron-up serviceIcon" aria-hidden="true"></i></span>
+                            <p id="BITHead" class="serviceName" onclick="display(BIT)">Business and Individual Taxes</p>
+                        </div>
+                        <div id="BIT">
+                            <p>
+                                ASK International has numerous employees who are former IRS employees and other tax professionals who are Certified 
+                                Professional Accountants (CPAs) and IRS Enrolled Agents (EAs). They work together as a team to make sure that your 
+                                tax return includes all of the credits and deductions that you are eligible for, and that you are well represented in
+                                any interaction with the Internal Revenue Service and state tax authorities.
+                            </p>
+                            <h4 class="impText" style="margin-top: 10px;">Individuals</h4>
+                            <ol>
+                                <li>Individual tax Return preparation, Federal and State for individuals</li>
+                                <li>Audit representation</li>
+                                <li>Collections enforcement representation</li>
+                                <li>IRS correspondence representation</li>
+                                <li>Tax strategy assistance)</li>
+                                <li>Offers- in- Compromise</li>
+                                <li>Penalty abatements</li>
+                                <li>General tax law questions</li>
+                                <li>For international tax returns and issues, please see the International Tax Section of This Website</li>
+                            </ol>
+                            <h4 class="impText" style="margin-top: 10px;">Businesses</h4>
+                            <ol>
+                                <li>Preparation of income tax returns for corporations, partnership, non-profits, estates and trusts</li>
+                                <li>Audit representation</li>
+                            </ol>
+                            <h4 class="impText" style="margin-top: 10px;">940, 941 Payroll Trust Fund Accounts</h4>
+                            <p>
+                                Trust fund tax liabilities, assessed under IRC 6672, cause many businesses to fail with a red IRS seizure sticker 
+                                attached to the businesses’ doors. Trust fund liabilities are easily transferred to the business’s owners and key employees.
+                                Often these taxes are satisfied by the filing of liens, levies, judgements and the seizing of bank accounts, cars and boats
+                                belonging to the business’s principals as well as business assets. None of these actions require the IRS to go to court. 
+                                The penalties are not dischargeable in bankruptcy. At ASKi, we have a retired IRS Revenue Officer, with many years of 
+                                experience in the untangling of these problematic accounts, and the obtaining of relief from the numerous types of penalties
+                                associated with them.
+
+                            </p>
+                        </div>
+                    </div>
+                    <h3 class="impText">Government Services</h3>
+                    <div class="sliderContent">
+                        <div>
+                            <span class="showContent"><i class="fa fa-chevron-down serviceIcon" aria-hidden="true"></i></span>
+                            <span class="hideContent"><i class="fa fa-chevron-up serviceIcon" aria-hidden="true"></i></span>
+                            <p id="PMHead" class="serviceName" onclick="display(PM)">Project Management</p>
+                        </div>
+                        <div id="PM">
+                            <p>
+                                AKSI provides services in the area of project management, in organizations that need skilled project 
+                                resources. We assist the current project managers with the management of their projects and resources,
+                                providing required guidance and advice. Our methodologies are scalable, structured and flexible and may 
+                                be applied to new, existing or problematic projects.The service includes:
+                            </p>
+                            <ol>
+                                <li>Strategic Planning.</li>
+                                <li>Project Planning.</li>
+                                <li>Change Management.</li>
+                                <li>Verification & Validation.</li>
+                                <li>PMO Support.</li>
+
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="sliderContent">
+                        <div>
+                            <span class="showContent"><i class="fa fa-chevron-down serviceIcon" aria-hidden="true"></i></span>
+                            <span class="hideContent"><i class="fa fa-chevron-up serviceIcon" aria-hidden="true"></i></span>
+                            <p id="IRMHead" class="serviceName" onclick="display(IRM)"> Internal Control and Risk Management</p>
+                        </div>
+                        <div id="IRM">
+                            <p>
+                                Rapidly emerging technologies, cyber threats and economic volatilities all contribute to a dynamic 
+                                business environment where managing risk is imperative. Aski helps in identifying, analyzing and 
+                                responding to risks.Also, assists to prevent critical risks all while improving efficiencies and 
+                                providing value to stakeholders.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sliderContent">
+                        <div>
+                            <span class="showContent"><i class="fa fa-chevron-down serviceIcon" aria-hidden="true"></i></span>
+                            <span class="hideContent"><i class="fa fa-chevron-up serviceIcon" aria-hidden="true"></i></span>
+                            <p id="CSHead" class="serviceName" onclick="display(CS)">Cyber Security</p>
+                        </div>
+                        <div id="CS">
+                            <p>
+                                Emerging technology increases the threat to cyber networking and data. Aksi assists to prevent the 
+                                cyber attack and enhance the cybersecurity. This requires specialized expertise, the potential for 
+                                management to fail to identify appropriate risks, and a firm's potential liability for overlooking 
+                                or underappreciating a cyber threat in its attestation. 
+                            </p>
+                        </div>
+                    </div>
+                    <h3 id="FSHead" class="impText">Forensic Services</h3>
+                    <div class="sliderContent">
+                        <div>
+                            <span class="showContent"><i class="fa fa-chevron-down serviceIcon" aria-hidden="true"></i></span>
+                            <span class="hideContent"><i class="fa fa-chevron-up serviceIcon" aria-hidden="true"></i></span>
+                            <p id="AMLHead" class="serviceName" onclick="display(AML)">Anti-Money Laundering (AML)</p>
+                        </div>
+                        <div id="AML">
+                            <p>
+                                The AML support team provides a complete suite of AML services to financial firms which do not have their own fraud/AML units. 
+                                Additionally, the AML Support Team serves to provide investigative expertise to larger financial firms seeking to augment 
+                                their existing AML team efforts on a temporary or long term basis. This includes the following areas:
+                            </p>
+                            <ol>
+                                <li>AML Program Design and Risk Assessment</li>
+                                <li>Customer Identification Program (CIP)</li>
+                                <li>Know Your Customer Procedures (KYC)</li>
+                                <li>Customer Due Diligence (CDD)</li>
+                                <li>Enhanced Due Diligence (EDD)</li>
+                                <li>Surveillance and Investigations</li>
+                                <li>Preparation of Suspicious Activity Reports (SARs)</li>
+                                <li>Employee Training</li>
+                                <li>Ongoing Risk Assessment</li>
+                                <li>OFAC Compliance</li>
+                                <li>AML Audit and Regulatory Issues</li>
+                            </ol>
+                            <h4 class="impText" style="margin-top: 10px;">Special Investigations Team</h4>
+                            <p>
+                                The other AML team is the Special Investigations Team made up of three former IRS Special Agents, a Revenue Officer, and a 
+                                former IRS Attorney, who specialized in AML Investigations. The team’s purpose is to conduct investigations on clients 
+                                identified as particularly high risk by the AML Support Team or the client’s internal AML investigations units.
+                            </p>
+                            <p>
+                                The team is well equipped to mitigate the client’s money laundering and fraud risk by its investigations. The team is also 
+                                very experienced in communicating with federal law enforcement and regulatory agencies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <h3 id="FMHead" class="impText">Financial Management</h3>
+                    <ol>
+                        <li>Accounting & Financial Support</li>
+                        <li>A-123, CPIC, OMB-300 Support</li>
+                        <li>Budget Support</li>
+                        <li>Performance Integration</li>
+                    </ol>
+                    <h3 id="ITMHead" class="impText">IT Management</h3>
+                    <ol>
+                        <li>Data Warehouse Management</li>
+                        <li>ERP Development Support</li>
+                        <li>Business Intelligence</li>
+                        <li>Deployment Support</li>
+                    </ol>
+                </div>
+                <div class="side-navigation-col">
+                    <h4>NAICS CODES</h4>
+                    <table class="side-service-list side-navigation">
+                        <thead><tr><th>Code</th><th>Description</th></tr></thead>
+                        <tbody>
+                            <tr><td>541211</td><td>Offices of Certified Public Accountants.</td></tr>
+                            <tr><td>541219</td><td>Other Accounting Services.</td></tr>
+                            <tr><td>518210</td><td>Data Processing, Hosting, & Related Services.</td></tr>
+                            <tr><td>541511</td><td>Custom Computer Programming Services.</td></tr>
+                            <tr><td>541513</td><td>Computer Facilities Management Services.</td></tr>
+                            <tr><td>541519</td><td>Other Computer Related Services.</td></tr>
+                            <tr><td>541611</td><td>Admin Mgmt & Gen Mgmt Consulting.</td></tr>
+                            <tr><td>541612</td><td>HR & Executive Search Consulting Services.</td></tr>
+                            <tr><td>541620</td><td>Environmental Consulting Services.</td></tr>
+                            <tr><td>611420</td><td>Computer Training</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="imageSection">
+                        <div class="image" >
+                            <img src="assets/consulting_image_6_coworkers.jpg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="clients">
+                <div class="conent">
+                    <h3 class="impText">Government Contracting Vehicles</h3>
+                    <p>
+                        Selected Government Contracting Vehicles include:
+                    </p>
+                    <div class="client-list">
+                        <ol>
+                            <li>GSA Schedule for Financial and Business Solutions(#GS-23F-0049V).</li>
+                            <li>GSA Schedule for IT Professional Services (In Process).</li>
+                            <li>DHS Program Management, Administrative, Clerical and Technical Services (PACTS).</li>
+                            <li>DOT FTA Office of Budget and Policy BPA (DTFT60-10-A-002).</li>
+                            <li>NASA Office of the Chief Engineer (NNH10CC01B).</li>
+                            <li>DOE BPA (DE-AT01-07NA20187).</li>
+                        </ol>
+                    </div>
+                    <div class="imageSection">
+                        <div class="image" >
+                            <img class="imageWidth" src="assets/shaking-hands-3096229_640.jpg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="side-navigation-col">
+                    <h4>OUR CLIENTS</h4>
+                    <p>
+                        Over the last 12 years, Aski has supported financial and information technology 
+                        management-related initiatives at various Federal agencies, including:
+                    </p>
+                    <nav class="side-navigation">
+                        <ul>
+                            <li><i class="fa fa-chevron-circle-right"></i><a href="http://www.dot.gov/" target="_blank">US Department of Transportation</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a href="http://www.house.gov/" target="_blank">US House of Representatives</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a href="http://www.energy.gov/" target="_blank">US Department of Energy</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a href="http://www.ustreas.gov/" target="_blank">US Department of the Treasury</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a href="http://www.defense.gov/" target="_blank">US Department of Defense</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a href="http://www.sec.gov/" target="_blank">US Securities and Exchange Commission</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a href="http://www.doi.gov/" target="_blank">US Department of the Interior</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a href="http://www.nasa.gov/" target="_blank">National Aeronautics and Space Administration</a></li>
+                        </ul>
+                    </nav>
+                    <p>
+                        Additionally, Aski has provided consulting services to the following clients:
+                    </p>
+                    <nav class="side-navigation">
+                        <ul>
+                            <li><i class="fa fa-chevron-circle-right"></i><a href="http://www.co.arlington.va.us/" target="_blank">Arlington County Government (Virginia)</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a href="http://www.co.arlington.va.us/" target="_blank">State of Maryland Government</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a href="http://www.co.arlington.va.us/" target="_blank">The World Bank Group</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a href="http://www.co.arlington.va.us/" target="_blank">Alexandria City Public Schools (Virginia)</a></li>
+                            <li><i class="fa fa-chevron-circle-right"></i><a href="http://www.co.arlington.va.us/" target="_blank">Freddie Mac</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div id="careers">
+                <div class="conent">
+                    <h3>CAREERS WITH Skygita.</h3>
+                    <h4 class="impText" style="margin-top: 10px;">
+                        Aski is always looking for talented professionals to become a part of our team.
+                    </h4>
+                    <p>
+                        We value honesty, leadership, collaboration and innovation. We also value individuals who are resourceful, 
+                        accountable, and committed to delivering high quality solutions as promised- on time and within budget. 
+                        If you are interested in a career with Aski, please send your resume to careers@ask-int.net
+                    </p>
+                    <p>We look forward to hearing from you.</p>
+
+                    <div class="imageSection">
+                        <div class="image">
+                            <div style="width: 50%">
+                                <img style="width: 70%" src="assets/consulting_image_3_group.jpg" alt="logo">
+                            </div>
+                            <div style="width: 50%">
+                                <img style="width: 100%" src="assets/career-111932_640.jpg" alt="logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-navigation-col">
+                    <h4>COMMITMENT TO OUR CLIENTS</h4>
+                    <p>
+                        Aski is an established, privately held government contractor with dedicated employees who bring relevant, 
+                        responsive and adaptive solutions to our customers.
+                    </p>
+                    <div class="imageSection">
+                        <div class="image" >
+                            <img class="imageWidth" src="assets/building_team.jpg" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact">
+                <div class="conent">
+                    <h3>CONTACT US</h3>
+                    <h4 class="impText" style="margin-top: 10px;">
+                        How can Aski help you or your organization?
+                    </h4>
+                    <div style="width: 50%; float: left;">
+                        <h4 style="margin-top: 10px;">
+                            ASK Int’l Inc.CPAs
+                        </h4>
+                        <address>
+                            Indira Kumar<br>
+                            V.P.Operations<br>
+                            4433-R Brookfiled Corporate Dr.<br>
+                            Chantilly, VA 20151<br>
+                        </address>
+                        <h4 style="margin-top: 10px;">
+                            Email
+                        </h4>
+                        <p>
+                            <a href="http://ask-int.net/" target="_blank"> info@ask-int.net</a>
+                        </p>
+                        <h4 style="margin-top: 10px;">Phone</h4>
+                        <address>
+                            Chantilly, VA: (301) 703-893-3448, 571-435-2370<br>
+                            Silver Spring, MD: (301) 754-2441<br>
+                        </address>
+                    </div>
+                    <div style="width: 50%; float:left;">
+                        <h4 style="margin-top: 10px;">
+                            Skygita. Maryland
+                        </h4>
+                        <address>
+                            10010B Colesville Rd.<br>
+                            Silver Spring, MD 20901<br>
+                        </address>
+                        <h4 style="margin-top: 10px;">
+                            Internet
+                        </h4>
+                        <p>
+                            <a href="http://ask-int.net/">http://ask-int.net/</a>
+                        </p>
+                        <h4 style="margin-top: 10px;">Fax</h4>
+                        <address>
+                            Chantilly, VA: 703-506-1355<br>
+                        </address>
+                    </div>
+                </div>
+                <div class="side-navigation-col">
+                    <div class="contact-form">
+                        <h3>CONTACT FORM</h3>
+                        <div class="failure" id="failure">
+                            <i class='fa fa-exclamation-triangle' style='color:red'></i>
+                            <p>Failed to submit form!</p>
+                        </div>
+                        <div class="success" id="success">
+                            <i class='fa fa-check-circle' style='color:green'></i>
+                            <p>Successfully submitted form!</p>
+                        </div>
+                        <div id="contactForm">
+                            <label>Name:</label><br>
+                            <input name="Name" type="text"/><br>
+                            <div class="error" id="name">
+                                <i class='fa fa-exclamation-triangle' style='color:red'></i>
+                                <p>Please enter your name</p>
+                            </div>
+                            <label>E-mail</label><br>
+                            <input name="Email" type="email"/><br>
+                            <div class="error" id="email">
+                                <i class='fa fa-exclamation-triangle' style='color:red'></i>
+                                <p id="validEmail">Please enter your e-mail</p>
+                            </div>
+                            <label>Phone:</label><br>
+                            <input name="Phone" type="number"/><br>
+                            <div class="error" id="phone">
+                                <i class='fa fa-exclamation-triangle' style='color:red'></i>
+                                <p>Please enter your phone</p>
+                            </div>
+                            <label>Message:</label><br>
+                            <textarea name="Message"></textarea>
+                            <div class="error" id="message">
+                                <i class='fa fa-exclamation-triangle' style='color:red'></i>
+                                <p>Please enter your message</p>
+                            </div>
+                            <button onclick="validateForm()">Submit</button>
+                            <button type="reset" onclick="reset()">Reset</button>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="conent">
+                    <div class="imageSection">
+                        <div class="image" >
+                            <img class="imageWidth" src="assets/crowd-3382508_640.png" alt="logo">
+                        </div>
+                    </div>
+                    <p>&nbsp;</p>
+                    <p>We look forward to hearing from you.</p>
+                </div>
+            </div>
+            <div id="newsroom">
+                <div class="sub-content">
+                    <span class="close" onclick="navigateTabs(home)"><i class="fa fa-times" aria-hidden="true"></i></span>
+                    <h3>NEWS ROOM</h3>
+                    <h4 class="impText" style="margin-top: 10px;">//FOR IMMEDIATE RELEASE//</h4>
+                    <p>
+                        Skygita. Awarded $5 Million BPA by US Department of Transportation Federal Transit Administration
+                    </p>
+                    <p>
+                        Alexandria, VA (October 22, 2009) – Skygita. announced today that it has been selected by the US Department of 
+                        Transportation (DOT) to receive a Blanket Purchase Agreement (BPA) at the Federal Transportation Administration (FTA).
+                    </p> 
+                    <p>
+                        The BPA is intended to support FTA’s Office of Budget and Policy technical and program support initiatives including 
+                        the coordination of its finance, accounting, and budget program activities. These services will support FTA’s mission 
+                        and the volume of purchases issued under this BPA has a $5 million ceiling value over the five year period of performance.
+                    </p> 
+                    <p>
+                        This contract was awarded with confidence in Aski’s expertise with Federal financial policies, procedures and regulation 
+                        as well as the firm’s past performance with Federal agencies, local and state government and commercial clients.
+                    </p>
+                    <p>
+                        "In my opinion, Aski’s competitive proposal and commitment to the customer over the last 12 years made all the difference 
+                        in us winning this contract," said Indira Kumar, Aski Vice President. "Under this contract, we will expand upon the services 
+                        that we provide to Federal agencies and combine resources with teaming partners to supply the ultimate in best value to the 
+                        Federal government."
+                    </p>
+                    <p>
+                        “It’s been a tremendous year at Aski, with key wins that reach across our entire organization,” added Mrs. Kumar. 
+                        “Our employees and partners have continued to rally together to deliver unparalleled support and services to our customers, 
+                        and our customers have noticed. We look forward to working with DOT stakeholders. With our combined resources, we will be 
+                        able develop and refine the tools and information needed to support FTA finance, budget, and accounting operations.”
+                    </p>
+                    <p>
+                        About Skygita.
+                        Established in 1997, Skygita. has provided commercial clients as well as US Federal, state and local governments with 
+                        mission-critical accounting, financial, audit and assurance, program and project management and information technology 
+                        management solutions. Headquartered in Alexandria, Virginia, the firm is committed to delivering repeatable processes with 
+                        high-quality, low-risk results for our customers and partners. Aski is a woman-owned, 8(a) SBA-certified Small Disadvantaged 
+                        CPA and professional services firm based in Alexandria, VA.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer class="fixed-footer">
+            <div class="main_footer">
+                <p>
+                    Skygita. © 2020 | info@ask-int.net 
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
